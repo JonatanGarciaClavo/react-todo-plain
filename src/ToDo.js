@@ -7,7 +7,7 @@ class ToDo extends Component {
     defaultClass += this.props.done ? ' callout-success' : ' callout-info';
 
     return (
-      <div className={defaultClass}>
+      <div className={defaultClass} onClick={this.props.onClickDone}>
         <i className='ficon ficon-checkmark mark-done' onClick={this.props.onClickDone}></i>
         <span>{this.props.value}</span>
         <i className='close' onClick={this.props.onClickClose}>&times;</i>

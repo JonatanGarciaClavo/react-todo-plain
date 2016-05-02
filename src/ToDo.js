@@ -8,7 +8,7 @@ class ToDo extends Component {
 
     return (
       <div className={defaultClass} onClick={this.props.onClickDone}>
-        <i className='ficon ficon-checkmark mark-done' onClick={this.props.onClickDone}></i>
+        <i className='ficon ficon-checkmark mark-done'></i>
         <span>{this.props.value}</span>
         <i className='close' onClick={this.props.onClickClose}>&times;</i>
       </div>
